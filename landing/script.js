@@ -4,11 +4,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Array of image URLs (or you can customize as needed)
     const images = [
-        'https://i.ytimg.com/vi/apfoJYeIeCg/maxresdefault.jpg',
-        'https://ericalayne.co/wp-content/uploads/2019/05/Morning-Pages-1-683x1024.png',
-        'https://i0.wp.com/hagengrowth.com/wp-content/uploads/2023/03/Gratitude-Journal-A-Beginners-Guide-to-Cultivate-Gratitude.jpg?resize=768%2C910&ssl=1',
-        'https://kalynbrooke.com/wp-content/uploads/2016/08/brain-dump-color-coding.jpg',
-        'https://artsupplyguide.com/wp-content/uploads/2015/11/art-journal-feature-1024x768.jpg',
+        'gradient.png',
     ]
 
     // Function to create a panel (square)
