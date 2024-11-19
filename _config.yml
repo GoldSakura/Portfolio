@@ -1,7 +1,7 @@
 # _config.yml
 title: "Get Good"
 description: "Python projects I undertake to improve my skills."
-baseurl: "" # Leave this empty if the site is served from the root
+baseurl: "[Go to Landing Page](landing/)" # Leave this empty if the site is served from the root
 url: "https://goldsakura.github.io"  # Replace with your actual GitHub Pages URL
 theme: jekyll-theme-primer
 paginate: 10  # Number of posts per page (adjust as needed)
