@@ -54,6 +54,22 @@ const modal = document.getElementById('modal');
 const closeBtn = document.querySelector('.close-btn');
 const modalText = document.getElementById('modal-text');
 
+const panelContents = [
+    {
+        title: "Day 1 - Band Name Generator",
+        content: "<p>Using your input to generate a band name.</p>"
+    },
+    {
+        title: "Day 2 - Tip Calculator",
+        content: "<p>Considering the tipping culture, we can still enjoy other people's company without fretting on little details.</p>"
+    },
+    {
+        title: "Day 3 - Treasure Island",
+        content: "<p>Back to the basics of 'choose your own adventure' games.</p>"
+    },
+    // Add more content as needed
+]
+
 // Add click event listener to each panel
 panels.forEach((panel, index) => {
     panel.addEventListener('click', () => {
