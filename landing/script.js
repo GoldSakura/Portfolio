@@ -58,10 +58,12 @@ const panelContents = [
     {
         title: "Day 1 - Band Name Generator",
         content: "<p>Using your input to generate a band name.</p>"
+        link: "1_100/band-name-gen.py"
     },
     {
         title: "Day 2 - Tip Calculator",
         content: "<p>Considering the tipping culture, we can still enjoy other people's company without fretting on little details.</p>"
+        link: "2_100/tip-calculator.py"
     },
     {
         title: "Day 3 - Treasure Island",
