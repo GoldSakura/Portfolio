@@ -7,6 +7,24 @@ document.addEventListener('DOMContentLoaded', () => {
         'gradient.png',
     ]
 
+    const panelContents = [
+    {
+        title: "Day 1 - Band Name Generator",
+        content: "<p>Using your input to generate a band name.</p>"
+        link: "1_100/band-name-gen.py"
+    },
+    {
+        title: "Day 2 - Tip Calculator",
+        content: "<p>Considering the tipping culture, we can still enjoy other people's company without fretting on little details.</p>"
+        link: "2_100/tip-calculator.py"
+    },
+    {
+        title: "Day 3 - Treasure Island",
+        content: "<p>Back to the basics of 'choose your own adventure' games.</p>"
+    },
+    // Add more content as needed
+]
+
     // Function to create a panel (square)
     function createPanel(index) {
         const panel = document.createElement('div');
@@ -23,9 +41,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         modal.style.display = 'block';
         modalText.innerHTML = `
-        <h3>Details for Panel ${index + 1}</h3>
+        <h3>${content.title}</h3>
         <img src="${panel.style.backgroundImage.slice(5, -2)}" alt="Panel image" width="100%" />
-        <p>This panel is about topic XYZ.</p>
+        ${content.content}
+        <a href="${content.link}" target="_blank">Go to project</a>
     `;
 
         })
@@ -54,23 +73,6 @@ const modal = document.getElementById('modal');
 const closeBtn = document.querySelector('.close-btn');
 const modalText = document.getElementById('modal-text');
 
-const panelContents = [
-    {
-        title: "Day 1 - Band Name Generator",
-        content: "<p>Using your input to generate a band name.</p>"
-        link: "1_100/band-name-gen.py"
-    },
-    {
-        title: "Day 2 - Tip Calculator",
-        content: "<p>Considering the tipping culture, we can still enjoy other people's company without fretting on little details.</p>"
-        link: "2_100/tip-calculator.py"
-    },
-    {
-        title: "Day 3 - Treasure Island",
-        content: "<p>Back to the basics of 'choose your own adventure' games.</p>"
-    },
-    // Add more content as needed
-]
 
 // Add click event listener to each panel
 panels.forEach((panel, index) => {
