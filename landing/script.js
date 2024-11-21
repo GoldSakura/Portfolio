@@ -73,19 +73,6 @@ const modal = document.getElementById('modal');
 const closeBtn = document.querySelector('.close-btn');
 const modalText = document.getElementById('modal-text');
 
-
-// Add click event listener to each panel
-panels.forEach((panel, index) => {
-    panel.addEventListener('click', () => {
-        // Open the modal when a panel is clicked
-        modal.style.display = 'block';
-
-        // Add content to the modal based on the clicked panel
-        // You can customize the content based on the panel or index
-        modalText.innerHTML = `Details for Panel ${index + 1}`;
-    });
-})
-
 // Close the modal when the close button is clicked
 closeBtn.addEventListener('click', () => {
     modal.style.display = 'none';
